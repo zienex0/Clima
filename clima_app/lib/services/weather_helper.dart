@@ -28,12 +28,13 @@ class WeatherHelper {
   }
 
   String getIcon(int condition) {
+    print('condition: $condition');
     if (condition < 300) {
       return '️⛈️';
     } else if (condition < 400) {
-      return '🌧️';
-    } else if (condition < 600) {
       return '☔️';
+    } else if (condition < 600) {
+      return '🌧️';
     } else if (condition < 700) {
       return '❄️';
     } else if (condition < 800) {

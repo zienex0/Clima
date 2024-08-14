@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:clima_app/services/weather_helper.dart';
 
 class LocationScreen extends StatefulWidget {
-  const LocationScreen(this.locationWeather);
+  const LocationScreen(this.locationWeather, {super.key});
   final dynamic locationWeather;
 
   @override
@@ -50,7 +50,7 @@ class _LocationScreenState extends State<LocationScreen> {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: const AssetImage('images/waterfall.png'),
+                image: const AssetImage('images/waterfall.jpg'),
                 fit: BoxFit.cover,
                 colorFilter: ColorFilter.mode(
                     Colors.white.withOpacity(0.6), BlendMode.dstATop),

@@ -13,11 +13,12 @@ class _CityScreenState extends State<CityScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(children: [
         Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: const AssetImage('images/city_roads_background.png'),
+              image: const AssetImage('images/city_roads_background.jpg'),
               fit: BoxFit.cover,
               colorFilter: ColorFilter.mode(
                   Colors.white.withOpacity(0.4), BlendMode.dstATop),
